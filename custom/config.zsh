@@ -1,9 +1,9 @@
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
 
-HISTFILE=~/.zsh_history
-HISTSIZE=10000
-SAVEHIST=10000
+export HISTFILE=~/.zsh_history
+export HISTSIZE=10000
+export SAVEHIST=10000
 
 setopt NO_BG_NICE # don't nice background tasks
 setopt NO_HUP
@@ -34,6 +34,6 @@ bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^?' backward-delete-char
 
-DISABLE_AUTO_UPDATE="true"
-ZSH_THEME="robbyrussell"
-PROMPT='[%{$fg_bold[white]%}%n@%{$fg_bold[red]%}%m %{$fg[cyan]%}%c%{$reset_color%}] $(git_prompt_info)'
+export DISABLE_AUTO_UPDATE="true"
+export ZSH_THEME="robbyrussell"
+export PROMPT='[%{$fg_bold[white]%}%n@%{$fg_bold[red]%}%m %{$fg[cyan]%}%c%{$reset_color%}] $(git_prompt_info)'
