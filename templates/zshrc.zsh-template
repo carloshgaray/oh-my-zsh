@@ -1,7 +1,6 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="robbyrussell"
-ENABLE_CORRECTION="true"
 
 plugins=(git colored-man-pages colorize extract history screen sbt scala lol jsontools)
 
