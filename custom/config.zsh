@@ -34,6 +34,7 @@ bindkey '^[[5C' end-of-line
 bindkey '^[[3~' delete-char
 bindkey '^?' backward-delete-char
 
+export DISABLE_CORRECTION="true"
 export DISABLE_AUTO_UPDATE="true"
 export ZSH_THEME="robbyrussell"
 export PROMPT='[%{$fg_bold[white]%}%n@%{$fg_bold[red]%}%m %{$fg[cyan]%}%c%{$reset_color%}] $(git_prompt_info)'
