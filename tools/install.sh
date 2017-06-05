@@ -112,13 +112,13 @@ main() {
   # printf "${NORMAL}"
   # env zsh
   
-  # Force load all symlinks from symlinks/
-  for symlink ($HOME/.oh-my-zsh/symlinks/*); do
-  	ln -fs $symlink $HOME/.`basename $symlink` || true
-  done
-  
 }
 
 main
+
+# Force load all symlinks from symlinks/
+for symlink in $HOME/.oh-my-zsh/symlinks/*; do
+	ln -fs $symlink $HOME/.`basename $symlink` || true
+done
 
 mkdir -p $HOME/bin
