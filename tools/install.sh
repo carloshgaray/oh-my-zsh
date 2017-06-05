@@ -115,9 +115,9 @@ main() {
 
 main
 
-# Force load all symlinks from symlinks/
-for symlink ($HOME/.oh-my-zsh/symlinks/*); do
-	ln -fs $symlink $HOME/.`basename $symlink` || true
-done
+# # Force load all symlinks from symlinks/
+# for symlink ($HOME/.oh-my-zsh/symlinks/*); do
+# 	ln -fs $symlink $HOME/.`basename $symlink` || true
+# done
 
 mkdir -p $HOME/bin
