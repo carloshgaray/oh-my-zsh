@@ -121,3 +121,4 @@ for symlink ($ZSH/symlinks/*); do
 	ln -fs $symlink $HOME/.`basename $symlink` || true
 done
 
+mkdir -p $HOME/bin
