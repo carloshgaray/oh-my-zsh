@@ -29,8 +29,6 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
-alias l='ls --color=auto'
-alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -a'
 alias dua='du -sh ./*'

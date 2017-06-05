@@ -114,3 +114,10 @@ main() {
 }
 
 main
+
+# Force load all symlinks from symlinks/
+ZSH=$HOME/.oh-my-zsh
+for symlink ($ZSH/symlinks/*); do
+	ln -fs $symlink $HOME/.`basename $symlink` || true
+done
+
