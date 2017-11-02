@@ -1,54 +1,60 @@
-alias wget='wget -c'
-alias myip="curl http://ipecho.net/plain; echo"
-alias pingy="ping google.com"
-alias pingg="ping google.com"
-
-alias push="pushover --api-token $PUSH_API_TOKEN --user-key $PUSH_USER_KEY"
-alias notify="push"
-alias lmk="push"
-
-alias hf="hadoop fs"
-alias hfl="hadoop fs -ls -h"
-alias hfp="hadoop fs -cp"
-alias hfu="hadoop fs -du -s -h"
-alias df='df -h'
-
-alias cls='clear' # Good 'ol Clear Screen command
-alias sc="screen -dRR"
-alias histg="history | grep"
-alias h='history'
-alias again="!!"
-alias redial="!!"
-alias repeat="!!"
-alias re="!!"
-
-alias mkdir='mkdir -pv'
-alias back='cd $OLDPWD'
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
 alias ......="cd ../../../../.."
-alias ll='ls -l'
-alias la='ls -a'
-alias dua='du -sh ./*'
-alias tailf="tail -f"
-
-alias grep='grep --color=auto'
+alias .....="cd ../../../.."
+alias ....="cd ../../.."
+alias ...="cd ../.."
+alias ..="cd .."
+alias _=sudo
+alias again="!!"
+alias back='cd $OLDPWD'
+alias bb='brazil-build clean; brazil-build'
+alias c='clear'
+alias cls='clear' # Good 'ol Clear Screen command
+alias df='df -h'
+alias dus='du -sh ./*'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
-
-alias nowdate='date +"%d-%m-%Y"'
-
-alias reboot='sudo /sbin/reboot'
-alias poweroff='sudo /sbin/poweroff'
+alias fuck="killall -9"
+alias grep='grep --color=auto'
+alias h='history'
 alias halt='sudo /sbin/halt'
-alias shutdown='sudo /sbin/shutdown'
-
-alias meminfo='free -g -l -t'
+alias hf="hadoop fs"
+alias hfca="hadoop fs -cat "
+alias hfcp="hadoop fs -cp"
+alias hfd="hadoop fs -du -s -h"
+alias hfl="hadoop fs -ls -h"
+alias hg="history | grep"
+alias hist="history"
+alias histg="history | grep"
 alias htopu="htop -u `whoami`"
-
 alias kssh="killall -9 ssh"
 alias ksshd="killall -9 ssh"
-
+alias la='ls -a'
+alias ll='ls -l'
+alias lmk="pushover"
+alias meminfo='free -g -l -t'
+alias mkdir='mkdir -pv'
+alias myip="curl http://ipecho.net/plain; echo"
 alias noise='echo -en "\007";sleep .2;echo -en "\007";sleep .2; echo -en "\007"'
+alias nope="git commit -m 'ಠ_ಠ'"
+alias notify="pushover"
+alias nowdate='date +"%Y-%m-%d"'
+alias pingg="ping google.com"
+alias pingy="ping yahoo.com"
+alias poweroff='sudo /sbin/poweroff'
+alias push="pushover"
+alias q='exit'
+alias r='reset'
+alias re="!!"
+alias reboot='sudo /sbin/reboot'
+alias redial="!!"
+alias repeat="!!"
+alias s="ssh -A -t"
+alias sc="screen -dRR"
+alias shutdown='sudo /sbin/shutdown'
+alias ss="spark-submit --master yarn --deploy-mode cluster --class"
+alias sudo='sudo '
+alias syi='sudo yum install -y'
+alias tailf="tail -f"
+alias wget='wget -c'
+alias yak="yarn application --kill"
+alias yal="yarn application --list"
