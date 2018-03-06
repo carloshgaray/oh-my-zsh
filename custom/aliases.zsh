@@ -58,3 +58,5 @@ alias tailf="tail -f"
 alias wget='wget -c'
 alias yak="yarn application --kill"
 alias yal="yarn application --list"
+alias anaconda2="source ~/anaconda2/bin/activate"
+alias anaconda3="source ~/anaconda3/bin/activate"
