@@ -1,10 +1,5 @@
-alias cloud-dev="ssh cloud-desktop"
-alias cloud="ssh cloud-desktop"
-alias aws-1="ssh aws-1.cd3co.com"
-alias gcp-1="ssh gcp-1.cd3co.com"
-alias aws-01="ssh aws-1.cd3co.com"
-alias gcp-01="ssh gcp-1.cd3co.com"
-alias home-pi-1="ssh home-pi-1.cd3co.com"
+alias cloud-dev="mosh cloud-desktop -- screen -dRR"
+alias cloud="mosh cloud-desktop -- screen -dRR"
 
 sshh() {
     ssh -t -A hadoop@$1 'screen -dRR'
